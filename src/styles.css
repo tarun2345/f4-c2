@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color:black;
+}
+.navbar{
+    background-color:#242121 ;
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    min-width: 95vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 1.5rem;
+}
+
+.logoDiv{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.logoDiv div{
+    display: flex;
+    align-items: baseline;
+    font-weight: 400;
+}
+.logoDiv img{
+    width: 3rem;
+}
+.searchBar{
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+.searchBar input{
+     flex-grow: 1;
+     padding: 0.4rem 0.8rem;
+     border-top-left-radius: 1rem;
+     border-bottom-left-radius: 1rem;
+     background-color: white;
+     color: black;
+}
+input{
+    border: none;
+}
+input:focus{
+    outline: none;
+}
+.searchBar button{
+    background-color: black;
+    color: white;
+    padding: 0.4rem 0.8rem;
+     border-top-right-radius: 1rem;
+     border-bottom-right-radius: 1rem;
+     border: none;
+}
+.profile{
+    display: flex;
+    width: 10%;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.profileIcons{
+    width: 5rem;
+    height: 1.5rem;
+}
+.booksSection{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+.bookDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bookDiv img{
+    min-width: 10rem;
+    min-height: 11rem;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+    min-height: 7rem;
+    font-size: 80%;
+    align-items: flex-start;
+    padding: 1rem;
+    background-color: #415F71;
+}
+.description{
+    max-height: 3rem;
+    overflow: hidden;
+}
+.info button{
+    background-color: transparent;
+    border: 1px solid white;
+    padding:3px 10px;
+    align-self: center;
+    font-size: 12px;
+    border-radius: 5px;
+}
+.imgDiv{
+    transform: rotateZ(-5deg);
+    position: relative;
+    left: 8px;
+}
+.selectedBook{
+    display: flex;
+    width: 95vw;
+    padding: 2rem;
+}
+.selectedImg img{
+    min-width: 12rem;
+    min-height: 16rem;
+    transform: rotateZ(-8deg);
+    position: relative;
+    left: 2rem;
+}
+.selectedInfo{
+    background-color: #415F71;
+    flex-grow: 1;
+    max-height: 15rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    padding-left: 4rem;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.selectedDes{
+    width: 100%;
+    overflow: hidden;
+    min-height: 3rem;
+}
+.grey{
+    color: rgb(146, 146, 146);
+}
+.span{
+    display: flex;
+    gap: 1rem; 
+    align-items: center;   
+}
+.span span{
+    color: rgb(210, 210, 210);
+}
+a{
+    text-decoration: none;
+}
+.btn{
+    display: flex;
+    gap: 5px;
+    align-self: flex-end;
+}
+.btn button{
+    background-color: transparent;
+    border: 1px solid grey;
+    padding: 4px 9px;
+    border-radius: 5px;
+}
+.line{
+    height: 14px;
+    width: 1px;
+    background-color: rgb(210, 210, 210);
+}
+.more{
+    padding: 1rem 3rem;
+}
